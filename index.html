@@ -1636,7 +1636,7 @@ Reach out through this encrypted channel to discuss collaboration opportunities 
 <div class="w-3 h-3 !rounded-full bg-green-500 mr-2"></div>
 <span class="ml-2 text-gray-400 font-mono text-sm">secure-contact@terminal ~ %</span>
 </div>
-<form class="space-y-6" action="mailto:prajwalkr3105@gmail.com" method="POST" enctype="text/plain">
+<form id="contactForm" class="space-y-6" action="https://getform.io/f/bgdpkdla" method="POST">
 <div class="space-y-2">
 <label class="block text-gray-300 font-mono text-sm">
 <span class="text-primary">$</span> user.name
@@ -1660,6 +1660,10 @@ Reach out through this encrypted channel to discuss collaboration opportunities 
 <span class="text-primary">$</span> message.body
 </label>
 <textarea rows="4" name="message" class="w-full bg-[#0F1419] border border-[#1A2233] !rounded text-gray-300 px-4 py-3 font-mono focus:border-primary focus:outline-none" placeholder="Enter your message here..." required></textarea>
+</div>
+<!-- Honeypot field to prevent spam -->
+<div style="position: absolute; left: -9999px;">
+  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
 </div>
 <button type="submit" class="w-full bg-primary text-[#0A0E17] font-medium py-3 px-6 !rounded-button hover:bg-opacity-90 transition-all">
 Send Encrypted Message
