@@ -1394,23 +1394,8 @@ document.addEventListener('DOMContentLoaded', function() {
     section.classList.add('fade-in');
   });
   
-  // Contact form submission
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    // Form will be submitted normally to GetForm.io
-    // But we'll add some UI feedback
-    
-    const submitBtn = document.getElementById('submit-btn');
-    const formStatus = document.getElementById('form-status');
-    
-    // Change button text and disable it
-    submitBtn.textContent = 'Sending...';
-    submitBtn.disabled = true;
-    
-    // We'll let the form submit naturally to GetForm.io
-    // The page will redirect to the form action URL after submission
-    // No need to prevent default or handle AJAX submission
-  });
-  });
+  // Simple form submission with no JavaScript handling
+  // The form will submit directly to the action URL
 });
 // Skills Chart
 const skillsChart = echarts.init(document.getElementById('skillsChart'));
@@ -1651,7 +1636,7 @@ Reach out through this encrypted channel to discuss collaboration opportunities 
 <div class="w-3 h-3 !rounded-full bg-green-500 mr-2"></div>
 <span class="ml-2 text-gray-400 font-mono text-sm">secure-contact@terminal ~ %</span>
 </div>
-<form id="contactForm" class="space-y-6" action="https://getform.io/f/YOUR_FORM_ENDPOINT" method="POST">
+<form class="space-y-6" action="mailto:prajwalkr3105@gmail.com" method="POST" enctype="text/plain">
 <div class="space-y-2">
 <label class="block text-gray-300 font-mono text-sm">
 <span class="text-primary">$</span> user.name
@@ -1676,15 +1661,7 @@ Reach out through this encrypted channel to discuss collaboration opportunities 
 </label>
 <textarea rows="4" name="message" class="w-full bg-[#0F1419] border border-[#1A2233] !rounded text-gray-300 px-4 py-3 font-mono focus:border-primary focus:outline-none" placeholder="Enter your message here..." required></textarea>
 </div>
-<!-- Honeypot field to prevent spam -->
-<div style="position: absolute; left: -9999px;">
-  <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
-</div>
-<div id="form-status" class="text-center hidden">
-  <p id="success-message" class="text-green-400 hidden">Message sent successfully!</p>
-  <p id="error-message" class="text-red-400 hidden">There was an error sending your message. Please try again.</p>
-</div>
-<button type="submit" id="submit-btn" class="w-full bg-primary text-[#0A0E17] font-medium py-3 px-6 !rounded-button hover:bg-opacity-90 transition-all">
+<button type="submit" class="w-full bg-primary text-[#0A0E17] font-medium py-3 px-6 !rounded-button hover:bg-opacity-90 transition-all">
 Send Encrypted Message
 </button>
 </form>
