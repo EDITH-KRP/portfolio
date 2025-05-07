@@ -79,7 +79,7 @@ Decentralized platform where users can mint and trade NFTs representing their in
 
 ## 📬 Contact Me
 
-- Email: prajwalkr272@gmail.com  
+- Email: prajwalkr3105@gmail.com  
 - LinkedIn: [Prajwal K R](linkedin.com/in/prajwal-kr-3a96a9212)  
 - GitHub: [Prajwalkr2702](github.com/EDITH-KRP)  
 - Portfolio: [prajwal.bio.link](https://portfolio-ten-blush-76.vercel.app/)  
